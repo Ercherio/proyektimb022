@@ -393,7 +393,7 @@ p.contact {
 
 /* Newslatter */
 .container-fluid.contact-form .col-title {
-	background-image: url('../img/half-envelope-icon.png');
+	background-image: url("img/half-envelope-icon.png");
 	background-repeat: no-repeat;
 	margin-top: 15px;
 	display: flex;
