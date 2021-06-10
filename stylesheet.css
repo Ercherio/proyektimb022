@@ -1,0 +1,534 @@
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	/* box-sizing: border-box; */
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Faqih */
+header {
+	position: fixed;
+	top: 0px;
+	z-index: 10;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	padding: 10px;
+}
+
+.header-left img {
+	width: 75%;
+}
+
+.dropbtn {
+	background-color: white;
+	color: black;
+	padding-top: 10px;
+	margin: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	font-size: 12px;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	/* z-index: 1; */
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	z-index: 1;
+}
+
+.dropdown:hover .dropbtn {
+	color: tomato;
+}
+
+.dropbtn span {
+	color: tomato;
+}
+
+.header-right {
+	float: right;
+	background-color: tomato;
+	font-size: 15px;
+}
+
+.header-right:hover {
+	background-color: #55b5bd;
+}
+
+.header-right a {
+	line-height: 70px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color: white;
+	display: block;
+}
+/* Akhir Faqih */
+
+/* Ercherio Marpaung */
+.container-header {
+	width: 100%;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.top-wrapper {
+	padding: 180px 0 100px 0;
+	background-image: url(../img/Academic.jpg);
+	background-size: cover;
+	text-align: center;
+	color: orangered;
+}
+
+.top-wrapper h1 {
+	opacity: 0.7;
+	font-size: 45px;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.top-wrapper p {
+	opacity: 0.7;
+	margin-bottom: 3px;
+}
+
+.btn-wrapper {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.btn-wrapper p {
+	color: black;
+	opacity: 0.7;
+	margin-bottom: 3px;
+}
+.btn-wrapper p {
+	margin: 10px 0;
+}
+
+.btn {
+	padding: 12px 24px;
+	color: white;
+	display: inline-block;
+	opacity: 0.8;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+.signup {
+	background-color: #239b76;
+  }
+  
+  .facebook {
+	background-color: #3b5998;
+	margin-right: 10px;
+  }
+  
+  .twitter {
+	background-color: #55acee;
+  }
+
+.fa {
+	margin-right: 7px;
+}
+
+.lesson-wrapper {
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: whitesmoke;
+	text-align: center;
+}
+
+.heading {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #5f5d60;
+}
+
+.heading h2 {
+	font-weight: normal;
+}
+
+.lesson {
+	float: left;
+	width: 25%;
+}
+
+.lesson h3 {
+	color: black;
+	display: block;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+@keyframes example {
+	from {
+		color: black;
+	}
+	to {
+		color: whitesmoke;
+	}
+}
+.lesson-icon {
+	margin: 0 auto;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.lesson-icon img {
+	position: absolute;
+	top: 13.5%;
+	left: 13.5%;
+}
+
+.lesson-icon p {
+	width: 100%;
+	color: white;
+}
+.text-contents {
+	width: 80%;
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 15px;
+	color: #b3aeb5;
+	animation-name: example1;
+	animation-duration: 4s;
+}
+
+@keyframes example1 {
+	from {
+		color: #b3aeb5;
+	}
+	to {
+		color: whitesmoke;
+	}
+}
+
+.clear {
+	clear: left;
+}
+/* Akhir Ercherio Marpaung */
+
+/* Dwi */
+.container-fluid.img,
+.container-fluid.contact-us,
+.container-fluid.contact-form {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.container-fluid.img .row-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffa800;
+	animation-name: example3;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	/* background-image: url('img/background-3.jpg');
+   background-repeat: no-repeat;*/
+}
+@keyframes example3 {
+	0% {
+		background-color: #ffa800;
+	}
+	25% {
+		background-color: rgb(150, 42, 238);
+	}
+	50% {
+		background-color: rgb(4, 138, 247);
+	}
+	100% {
+		background-color: rgb(36, 245, 17);
+	}
+}
+
+.container-fluid.img .col-img {
+	padding: 20px;
+}
+
+.container-fluid.contact-us {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 70px;
+}
+
+p {
+	font-size: 18px;
+}
+
+.container-fluid.contact-us .row-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.container-fluid.contact-us .col-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 60px;
+}
+
+.container-fluid.contact-us .col-item .circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 105px;
+	height: 105px;
+	border-radius: 50%;
+	margin: 20px 0;
+	box-shadow: 5px 5px 3px #bdbdbd;
+}
+
+.container-fluid.contact-us .col-item .circle:hover {
+	transform: scale(1.3);
+	box-shadow: 8px 8px 5px #bdbdbd;
+}
+
+.container-fluid.contact-us .col-item .img-rounded {
+	width: 65px;
+}
+
+.container-fluid.contact-us .col-item .circle-1 {
+	text-align: center;
+	background-color: #55b5bd;
+}
+.container-fluid.contact-us .col-item .circle-2 {
+	background-color: #9ebe3b;
+}
+
+.container-fluid.contact-us .col-item .circle-3 {
+	background-color: #ffa800;
+}
+
+p.contact {
+	margin: 0;
+	font-size: 14px;
+}
+
+.image-contact {
+	position: relative;
+	top: 50px;
+}
+
+.container-fluid.contact-form {
+	margin-top: 46px;
+	min-height: 150px;
+	padding: 10px;
+	background-color: #3d99ff;
+}
+
+.container-fluid.contact-form .row-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.container-fluid.contact-form .col-title {
+	background-image: url('../img/half-envelope-icon.png');
+	background-repeat: no-repeat;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-fluid.contact-form .h-envp {
+	position: relative;
+	right: 20px;
+	bottom: 20px;
+	padding: 25px 0;
+	color: white;
+	letter-spacing: 3px;
+}
+
+.container-fluid.contact-form .col-form {
+	width: 30%;
+	box-sizing: border-box;
+	position: relative;
+	margin-right: 60px;
+	color: white;
+}
+.container-fluid.contact-form .col-form p {
+	font-size: 14px;
+	margin: 0;
+}
+
+.container-fluid.contact-form .col-form input[type='text'] {
+	width: 100%;
+	padding: 18px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+.container-fluid.contact-form .col-form button[type='submit'] {
+	position: absolute;
+	right: 3px;
+	top: 4px;
+	width: 40%;
+	background-color: #ffb933;
+	color: white;
+	padding: 13px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	font-weight: 1000;
+}
+
+.container-fluid.contact-form .col-phone {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	border-left: 3px solid white;
+	padding-left: 45px;
+	color: white;
+}
+
+.container-fluid.contact-form .row-btn-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin: auto;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #ffb933;
+}
+
+.container-fluid.contact-form a {
+	position: absolute;
+	top: 35px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
+/* Akhir Dwi */
+
+/* Dewi */
+footer {
+	background-color: thistle;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F10%2FPontos-eacute-cor-brilho-pap.jpg&f=1&nofb=1);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+
+.About {
+	font-size: 25px;
+	color: white;
+	padding-top: 50px;
+	padding-left: 60px;
+}
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	position: relative;
+}
+
+.main-footer {
+	width: 25%;
+	padding-bottom: 30px;
+	padding-left: 60px;
+}
+
+.main-footer p {
+	color: white;
+	font-size: 10px;
+}
+
+.bawahan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+.bawahan .btn img {
+	width: 20px;
+}
+
+.tulisan p {
+	color: black;
+	font-size: 12px;
+	margin: 0;
+}
+
+.tulisan a {
+	color: #ffb933;
+}
+/*Firdaus bagian perbaikan/revisi/menambahkan apabila ada yang salah/kurang/ tidak sesuai
+/* Akhir Dewi */
+
