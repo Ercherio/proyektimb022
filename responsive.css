@@ -1,6 +1,6 @@
 /* Untuk Tablet */
-@media all and (max-width: 1000px) {
-	nav {
+@media screen and (max-width: 1000px) {
+  nav {
 		flex-direction: row-reverse;
 	}
 
@@ -11,8 +11,8 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: white;
-		height: 100vh;
+		background-color: rgb(230, 226, 221);
+		height: 80vh;
 		width: 35%;
 		transform: translateX(-100%);
 		transition: all 0.5s;
@@ -27,11 +27,11 @@
 	}
 
 	.menu {
-		background-color: #ffa800;
+		background-color: tomato;
 		width: 45px;
 		height: 45px;
 		border-radius: 50%;
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 
 	.menu-toggle {
@@ -89,135 +89,136 @@
 		opacity: 0;
 		transform: rotate(-45deg) translate(-1px, 0);
 	}
+	/*Akhir header*/
 
-	.lesson {
-		width: 100%;
-		margin-bottom: 50px;
-	}
+  .lesson {
+   width: 100%;
+   margin-bottom: 50px;
+ }
+ 
+ .top-wrapper h1 {
+   font-size: 32px;
+ }
+ 
+ .heading h2 {
+   font-size: 20px;
+ }
+ .container-fluid.img .row-img {
+  flex-direction: column;
+  height: 1;
+}
 
-	.top-wrapper h1 {
-		font-size: 32px;
-	}
+.container-fluid.img .col-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
 
-	.heading h2 {
-		font-size: 20px;
-	}
+.container-fluid.img .col-img img {
+  width: 65%;
+}
 
-	.container-fluid.img .row-img {
-		flex-direction: column;
-		height: 1;
-	}
+.container-fluid.contact-us .col-item {
+  padding: 0 20px;
+}
 
-	.container-fluid.img .col-img {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-	}
+.container-fluid.contact-us .row-items {
+  flex-wrap: wrap;
+}
 
-	.container-fluid.img .col-img img {
-		width: 65%;
-	}
+.container-fluid.contact-form .row-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 100px;
+}
 
-	.container-fluid.contact-us .col-item {
-		padding: 0 20px;
-	}
+.container-fluid.contact-form .col-title {
+  position: relative;
+  left: 20px;
+}
 
-	.container-fluid.contact-us .row-items {
-		flex-wrap: wrap;
-	}
+.container-fluid.contact-form .h-envp {
+  top: 5px;
+  margin: 0;
+}
 
-	.container-fluid.contact-form .row-form {
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: column;
-		align-items: flex-start;
-		margin: 0 100px;
-	}
+.container-fluid.contact-form .col-form {
+  width: 100%;
+}
 
-	.container-fluid.contact-form .col-title {
-		position: relative;
-		left: 20px;
-	}
+.container-fluid.contact-form .col-phone {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-	.container-fluid.contact-form .h-envp {
-		top: 5px;
-		margin: 0;
-	}
-
-	.container-fluid.contact-form .col-form {
-		width: 100%;
-	}
-
-	.container-fluid.contact-form .col-phone {
-		height: 100px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.container-fluid.contact-form .row-btn-top {
-		position: relative;
-		margin: auto;
-	}
+.container-fluid.contact-form .row-btn-top {
+  position: relative;
+  margin: auto;
+}
 }
 
 /* Untuk Smartphone */
-@media all and (max-width: 670px) {
-	.dropbtn {
-		display: none;
-	}
-	.header-right {
-		display: none;
-	}
-	.lesson {
-		width: 100%;
-	}
+@media screen and (max-width: 670px) {
+  
 
-	.btn {
-		width: 100%;
-	}
+.menu{
+  margin-top:10px;
+}
 
-	.facebook {
-		margin-bottom: 10px;
-	}
+/*Akhir Header*/
 
-	.top-wrapper {
-		text-align: left;
-	}
+  .lesson {
+   width: 100%;
+ }
 
-	/* Tambahkan CSS untuk header-right */
-	.header-right {
-		display: none;
-	}
+ .btn {
+   width: 100%;
+ }
+ 
+ .facebook {
+   margin-bottom: 10px;
+ }
+ 
+ .top-wrapper {
+   text-align: center;
+ }
 
-	/* Tambahkan CSS untuk menu-icon */
-	.menu-icon {
-		display: block;
-	}
+ 
+ /* Tambahkan CSS untuk menu-icon */
+ .menu-icon{
+   display:block;
+ }
+ 
+ .top-wrapper h1 {
+   font-size: 24px;
+   line-height: 36px;
+ }
+ 
+ .top-wrapper p {
+   font-size: 14px;
+   line-height: 20px;
+ }
 
-	.top-wrapper h1 {
-		font-size: 24px;
-		line-height: 36px;
-	}
+ .container-fluid.contact-form .row-form {
+  margin: 0;
+  padding: 15px;
+ }
 
-	.top-wrapper p {
-		font-size: 14px;
-		line-height: 20px;
-	}
+ footer {
+  text-align: center;
+}
 
-	.container-fluid.contact-form .row-form {
-		margin: 0;
-		padding: 15px;
-	}
-
-	footer {
-		text-align: center;
-	}
-
-	.main-footer {
-		width: 100%;
-		padding: 10px;
-		margin: 0;
-	}
+ .main-footer{
+   width: 100%;
+   padding: 10px;
+   margin: 0;
+ }
+ .tulisan{
+   width: 80%;
+ }
 }
