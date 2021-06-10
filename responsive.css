@@ -1,6 +1,6 @@
 /* Untuk Tablet */
 @media screen and (max-width: 1000px) {
-  nav {
+	nav {
 		flex-direction: row-reverse;
 	}
 
@@ -91,134 +91,140 @@
 	}
 	/*Akhir header*/
 
-  .lesson {
-   width: 100%;
-   margin-bottom: 50px;
- }
- 
- .top-wrapper h1 {
-   font-size: 32px;
- }
- 
- .heading h2 {
-   font-size: 20px;
- }
- .container-fluid.img .row-img {
-  flex-direction: column;
-  height: 1;
-}
+	.lesson {
+		width: 100%;
+		margin-bottom: 50px;
+	}
 
-.container-fluid.img .col-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
+	.top-wrapper h1 {
+		font-size: 32px;
+	}
 
-.container-fluid.img .col-img img {
-  width: 65%;
-}
+	.heading h2 {
+		font-size: 20px;
+	}
 
-.container-fluid.contact-us .col-item {
-  padding: 0 20px;
-}
+	.container-fluid.contact-us .row-contact {
+		margin-bottom: 35px;
+	}
 
-.container-fluid.contact-us .row-items {
-  flex-wrap: wrap;
-}
+	.container-fluid.img .row-img {
+		flex-direction: column;
+		height: 1;
+	}
 
-.container-fluid.contact-form .row-form {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0 100px;
-}
+	.container-fluid.img .col-img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
 
-.container-fluid.contact-form .col-title {
-  position: relative;
-  left: 20px;
-}
+	.container-fluid.img .col-img img {
+		width: 65%;
+	}
 
-.container-fluid.contact-form .h-envp {
-  top: 5px;
-  margin: 0;
-}
+	.container-fluid.contact-us .col-item {
+		padding: 20px;
+	}
 
-.container-fluid.contact-form .col-form {
-  width: 100%;
-}
+	.container-fluid.contact-us .row-items {
+		flex-wrap: wrap;
+	}
 
-.container-fluid.contact-form .col-phone {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+	.container-fluid.contact-us .col-item .circle {
+		margin: 30px 0 30px;
+	}
 
-.container-fluid.contact-form .row-btn-top {
-  position: relative;
-  margin: auto;
-}
+	.container-fluid.contact-form .row-form {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		margin: 0 100px;
+	}
+
+	.container-fluid.contact-form .col-title {
+		position: relative;
+		left: 20px;
+	}
+
+	.container-fluid.contact-form .h-envp {
+		top: 5px;
+		margin: 0;
+	}
+
+	.container-fluid.contact-form .col-form {
+		width: 100%;
+	}
+
+	.container-fluid.contact-form .col-phone {
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container-fluid.contact-form .row-btn-top {
+		position: relative;
+		margin: auto;
+	}
 }
 
 /* Untuk Smartphone */
 @media screen and (max-width: 670px) {
-  
+	.menu {
+		margin-top: 10px;
+	}
 
-.menu{
-  margin-top:10px;
-}
+	/*Akhir Header*/
 
-/*Akhir Header*/
+	.lesson {
+		width: 100%;
+	}
 
-  .lesson {
-   width: 100%;
- }
+	.btn {
+		width: 100%;
+	}
 
- .btn {
-   width: 100%;
- }
- 
- .facebook {
-   margin-bottom: 10px;
- }
- 
- .top-wrapper {
-   text-align: center;
- }
+	.facebook {
+		margin-bottom: 10px;
+	}
 
- 
- /* Tambahkan CSS untuk menu-icon */
- .menu-icon{
-   display:block;
- }
- 
- .top-wrapper h1 {
-   font-size: 24px;
-   line-height: 36px;
- }
- 
- .top-wrapper p {
-   font-size: 14px;
-   line-height: 20px;
- }
+	.top-wrapper {
+		text-align: center;
+	}
 
- .container-fluid.contact-form .row-form {
-  margin: 0;
-  padding: 15px;
- }
+	/* Tambahkan CSS untuk menu-icon */
+	.menu-icon {
+		display: block;
+	}
 
- footer {
-  text-align: center;
-}
+	.top-wrapper h1 {
+		font-size: 24px;
+		line-height: 36px;
+	}
 
- .main-footer{
-   width: 100%;
-   padding: 10px;
-   margin: 0;
- }
- .tulisan{
-   width: 80%;
- }
+	.top-wrapper p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.container-fluid.contact-form .row-form {
+		margin: 0;
+		padding: 15px;
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	.main-footer {
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+	}
+	.tulisan {
+		width: 80%;
+	}
 }
