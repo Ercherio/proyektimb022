@@ -1,48 +1,57 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 html {
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	font-family: 'Open Sans', sans-serif, arial, Geneva;
 	max-width: 100%;
-	font-family: 'Open Sans', sans-serif;
-	/* box-sizing: border-box; */
+	overflow-x: hidden;
 }
 
 a {
 	text-decoration: none;
 }
-
 /* Faqih */
+.container-header {
+	width: 100%;
+}
+
 header {
 	position: fixed;
 	top: 0px;
 	z-index: 10;
 }
-
 nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	max-width: 100%;
 	width: 100%;
-	background-color: white;
+	background-color: rgb(230, 226, 221);
 	position: fixed;
-	top: 0px;
-	padding: 10px;
+}
+.right {
+	display: flex;
+}
+
+.header-left {
+	padding: 5px;
 }
 
 .header-left img {
-	width: 75%;
+	width: 70%;
 }
 
 .dropbtn {
-	background-color: white;
+	background-color: rgb(230, 226, 221);
 	color: black;
-	padding-top: 10px;
-	margin: 30px;
+	padding: 25px 15px;
 	font-size: 15px;
-	font-weight: bold;
 	border: none;
 	cursor: pointer;
 }
@@ -52,6 +61,10 @@ nav {
 	display: inline-block;
 }
 
+.menu-toggle {
+	display: none;
+}
+
 .dropdown-content {
 	display: none;
 	font-size: 12px;
@@ -59,11 +72,7 @@ nav {
 	background-color: #f9f9f9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	/* z-index: 1; */
-}
-
-.menu-toggle {
-	display: none;
+	z-index: 1;
 }
 
 .dropdown-content a {
@@ -78,7 +87,6 @@ nav {
 
 .dropdown:hover .dropdown-content {
 	display: block;
-	z-index: 1;
 }
 
 .dropdown:hover .dropbtn {
@@ -109,10 +117,6 @@ nav {
 /* Akhir Faqih */
 
 /* Ercherio Marpaung */
-.container-header {
-	width: 100%;
-}
-
 .container {
 	max-width: 1170px;
 	width: 100%;
@@ -154,6 +158,19 @@ nav {
 	margin: 10px 0;
 }
 
+.signup {
+	background-color: #239b76;
+}
+
+.facebook {
+	background-color: #3b5998;
+	margin-right: 10px;
+}
+
+.twitter {
+	background-color: #55acee;
+}
+
 .btn {
 	padding: 12px 24px;
 	color: white;
@@ -166,18 +183,6 @@ nav {
 .btn:hover {
 	opacity: 1;
 }
-.signup {
-	background-color: #239b76;
-  }
-  
-  .facebook {
-	background-color: #3b5998;
-	margin-right: 10px;
-  }
-  
-  .twitter {
-	background-color: #55acee;
-  }
 
 .fa {
 	margin-right: 7px;
@@ -297,7 +302,6 @@ nav {
 		background-color: rgb(36, 245, 17);
 	}
 }
-
 .container-fluid.img .col-img {
 	padding: 20px;
 }
@@ -310,8 +314,8 @@ nav {
 	margin-top: 70px;
 }
 
-p {
-	font-size: 18px;
+.container-fluid.contact-us p {
+	font-size: 14px;
 }
 
 .container-fluid.contact-us .row-items {
@@ -334,10 +338,10 @@ p {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 105px;
-	height: 105px;
+	width: 125px;
+	height: 125px;
 	border-radius: 50%;
-	margin: 20px 0;
+	margin: 70px 0 30px;
 	box-shadow: 5px 5px 3px #bdbdbd;
 }
 
@@ -372,6 +376,7 @@ p.contact {
 	top: 50px;
 }
 
+/* container-fluid contact-form */
 .container-fluid.contact-form {
 	margin-top: 46px;
 	min-height: 150px;
@@ -386,6 +391,7 @@ p.contact {
 	flex-direction: row;
 }
 
+/* Newslatter */
 .container-fluid.contact-form .col-title {
 	background-image: url('../img/half-envelope-icon.png');
 	background-repeat: no-repeat;
@@ -462,11 +468,10 @@ p.contact {
 	height: 60px;
 	border-radius: 50%;
 	background-color: #ffb933;
+	top: 40px;
 }
 
-.container-fluid.contact-form a {
-	position: absolute;
-	top: 35px;
+.container-fluid.contact-form .go-to-top {
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
@@ -474,7 +479,7 @@ p.contact {
 /* Akhir Dwi */
 
 /* Dewi */
-footer {
+.footer-about {
 	background-color: thistle;
 	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F10%2FPontos-eacute-cor-brilho-pap.jpg&f=1&nofb=1);
 	background-repeat: no-repeat;
@@ -483,10 +488,9 @@ footer {
 }
 
 .About {
-	font-size: 25px;
+	font-size: 12px;
 	color: white;
-	padding-top: 50px;
-	padding-left: 60px;
+	padding: 10px 60px;
 }
 
 .back {
@@ -527,8 +531,6 @@ footer {
 }
 
 .tulisan a {
-	color: #ffb933;
+	color: tomato;
 }
-/*Firdaus bagian perbaikan/revisi/menambahkan apabila ada yang salah/kurang/ tidak sesuai
 /* Akhir Dewi */
-
